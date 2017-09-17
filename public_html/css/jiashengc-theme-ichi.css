@@ -20,12 +20,18 @@ h5 {
     font-family: 'Average', serif;
 }
 
+h1 {
+    font-size: 40px;
+    margin: 0;
+}
+
 .ichi-body { 
     height: 100vh;
     position: relative;
     background-image: url("../images/kl.jpg");
     background-position: center center;
-    background-size: cover;
+    background-size: calc(100% + 50px);
+    /* transition: all .25s; */
 }
 
 .ichi-body-colour {
@@ -45,5 +51,38 @@ h5 {
 }
 
 .ichi-content-left {
-    margin: 10px;
+    margin: 20px;
+}
+
+.ichi-circle {
+    position: relative;
+	width: 50px;
+	height: 50px;
+	background: white;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+}
+
+.ichi-bars {
+    font-size: 25px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 44%;
+    height: 45%;
+    margin: auto;
+}
+
+.ichi-title {
+    margin-top: 100px;
+}
+
+/*
+ * FONT-AWESOME REPLACE
+ */
+.fa-bars {
+    color: black;
 }
