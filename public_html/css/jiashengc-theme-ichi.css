@@ -239,7 +239,7 @@ h1 {
     transition: all .5s;
 }
 
-.ichi-link {
+.ichi-link a {
     color: white;
 }
 

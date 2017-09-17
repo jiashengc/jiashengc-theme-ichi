@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <?php include ('../includes/header.php'); ?>
+    <?php createTitle('Projects') ?>
     <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/jiashengc-theme-ichi.css">
