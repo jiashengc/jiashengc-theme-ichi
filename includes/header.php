@@ -7,12 +7,12 @@
 <meta name="keywords" content="Jia Sheng Chong, Software Engineering Student, Computer Science, Information Technlogy, Malaysia">
 <meta name="p:domain_verify" content="5f90a36a774b67e6163cc15aaed842f8"/>
 <link rel="shortcut icon" type="image/png" href="images/logo.png">
-<link rel="canonical" href="<?php 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF'] ?>">
+<link rel="canonical" href="<?php "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]"; ?>">
 
 <!-- Open Graph Protocol -->
 <meta property="og:title" content="Jia Sheng Chong | Computer Science Student Portfolio" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="<?php 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF'] ?>" />
+<meta property="og:url" content="<?php "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]"; ?>" />
 <meta property="og:image" content="http://jiashengc.com/images/logo.png" />
 
 <!-- Twitter Card -->

@@ -1,5 +1,5 @@
 <?php
-    $domain = "http://$_SERVER[HTTP_HOST]";
+    $domain = "https://$_SERVER[HTTP_HOST]";
 ?>
 
 <div class="ichi-circle" onclick="openNav();">
@@ -52,9 +52,9 @@
                     <div class="ichi-content-right">
                         <h5 class="ichi-title-sm">Navigation ~</h5>
                         <nav class="ichi-nav">
-                            <a href="./"><h2>Home</h2></a>
-                            <a href="about"><h2>About</h2></a>
-                            <a href="projects"><h2>Projects</h2></a>
+                            <a class="ichi-nav-home" href="./"><h2>Home</h2></a>
+                            <a class="ichi-nav-about" href="about"><h2>About</h2></a>
+                            <a class="ichi-nav-projects" href="projects"><h2>Projects</h2></a>
                             <a class="no-barba" href="resume.pdf"><h2>Resume</h2></a>
 
                             <br>
@@ -75,6 +75,18 @@
 </div>
 
 <script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script>
+    let url = window.location.href;
+    url = url.split("/");
+
+    let str = url[url.length - 1];
+    if (str == "") {
+        document.getElementsByClassName('ichi-nav-home')[0].className += " ichi-white";
+    } else {
+        let className = 'ichi-nav-'+str;
+        document.getElementsByClassName(className)[0].className += " ichi-white";
+    }
+</script>
 <script>
     let open = false;
 
