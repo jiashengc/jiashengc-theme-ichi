@@ -12,6 +12,17 @@ body {
     padding: 0px;
 }
 
+a {
+    text-decoration: none;
+    color: #6B818C;
+    transition: all .25s;
+}
+
+a:hover {
+    text-decoration: none;
+    color: white;
+}
+
 h1,
 h2,
 h3,
@@ -32,7 +43,6 @@ h1 {
     background-position: center center;
     background-size: calc(400% + 50px);
     background-repeat: no-repeat;
-    transition: 0.5s ease-in-out;
 }
 
 .ichi-side-bar {
@@ -40,7 +50,7 @@ h1 {
     width: 0;
     position: fixed;
     z-index: 1;
-    background-color: #111;
+    background-color: #344351;
     overflow-x: hidden;
     overflow-y: hidden;
     transition: 0.5s ease-in-out;
@@ -93,6 +103,10 @@ h1 {
     height: 96vh;
 }
 
+.ichi-content-side {
+    background-color: #4E657A;
+}
+
 .ichi-content-back {
     background-color: rgba(16,28,37,0.8);
 }
@@ -103,8 +117,17 @@ h1 {
     margin: 20px;
 }
 
-.ichi-circle {
+.ichi-content-right {
     position: relative;
+    height: 90vh;
+}
+
+.ichi-circle {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin-top: 45px;
+    margin-left: 35px;
 	width: 50px;
 	height: 50px;
 	background: white;
@@ -112,6 +135,7 @@ h1 {
 	-webkit-border-radius: 50px;
     border-radius: 50px;
     cursor: pointer;
+    z-index: 10;
 }
 
 .ichi-bars {
@@ -127,11 +151,19 @@ h1 {
 }
 
 .ichi-title {
-    margin-top: 100px;
+    margin-top: 150px;
+}
+
+.ichi-title-sm {
+    margin-top: 40px;
 }
 
 .ichi-hr {
     width: 75%;
+}
+
+.ichi-nav {
+    margin-top: 120px;
 }
 
 .ichi-footer {
@@ -150,3 +182,74 @@ h1 {
 .fa-times {
     color: black;
 }
+
+/*
+ * HAMBURGER MENU
+ */
+ #nav-icon1 {
+    width: 23px;
+    height: 30px;
+    position: relative;
+    margin: 14px auto;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+  }
+  
+  #nav-icon1 span {
+    display: block;
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    background: black;
+    border-radius: 4px;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+  }
+  
+  #nav-icon1 span:nth-child(1) {
+    top: 0px;
+  }
+  
+  #nav-icon1 span:nth-child(2) {
+    top: 9px;
+  }
+  
+  #nav-icon1 span:nth-child(3) {
+    top: 18px;
+  }
+  
+  #nav-icon1.open span:nth-child(1) {
+    top: 9px;
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    transform: rotate(135deg);
+  }
+  
+  #nav-icon1.open span:nth-child(2) {
+    opacity: 0;
+    left: -60px;
+  }
+  
+  #nav-icon1.open span:nth-child(3) {
+    top: 9px;
+    -webkit-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+    -o-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+  }
