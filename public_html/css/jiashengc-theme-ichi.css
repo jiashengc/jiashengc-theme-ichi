@@ -50,7 +50,7 @@ h1 {
 .ichi-body { 
     height: 100vh;
     position: relative;
-    background-image: url("../images/kl.jpg");
+    background-image: url("../images/blue.jpg");
     background-position: center center;
     background-size: calc(400% + 50px);
     background-repeat: no-repeat;
@@ -62,7 +62,7 @@ h1 {
     width: 0;
     position: fixed;
     z-index: 1;
-    background-color: #344351;
+    background-color: #454d5c;
     overflow-x: hidden;
     overflow-y: hidden;
     transition: 0.5s ease-in-out;
@@ -148,6 +148,10 @@ h1 {
     font-family: 'Lora', serif;
 }
 
+.ichi-content-about {
+    text-align: justify;
+}
+
 .ichi-circle {
     position: fixed;
     top: 0;
@@ -178,6 +182,10 @@ h1 {
 
 .ichi-title {
     margin-top: 150px;
+}
+
+.ichi-title-sub {
+    margin-top: -15px;
 }
 
 .ichi-title-sm {
@@ -211,6 +219,28 @@ h1 {
 .ichi-footer {
     display: table-cell;
     vertical-align: bottom;
+}
+
+.ichi-project-list li {
+    cursor: pointer;
+    transition: all .25s;
+}
+
+.ichi-project-list:hover {
+    cursor: pointer;
+    text-shadow: black 1px 1px 6px;
+}
+
+.ichi-made-with {
+    transition: all .5s;
+}
+
+.ichi-motto {
+    transition: all .5s;
+}
+
+.ichi-link {
+    color: white;
 }
 
 /*

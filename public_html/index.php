@@ -8,120 +8,78 @@
 
 <body>
 
-    <div class="container-fluid">
+    <div id="barba-wrapper">
+        <div class="container-fluid barba-container">
 
-        <div class="ichi-circle" onclick="openNav();">
-            <div id="nav-icon1">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
+            <?php include ('../includes/sidebar.php'); ?>
 
-        <?php include ('../includes/sidebar.php'); ?>
+            <!-- CONTENT -->
+            <div class="row ichi-body">
+                <div class="ichi-body-colour">
 
-        <!-- CONTENT -->
-        <div class="row ichi-body">
-            <div class="ichi-body-colour">
+                    <!-- CONTENT: LEFT SECTION -->
+                    <div class="col-sm-8 col-md-6">
+                        <div class="ichi-content ichi-content-back">
+                            <div class="row">
 
-                <!-- CONTENT: LEFT SECTION -->
-                <div class="col-sm-8 col-md-6">
-                    <div class="ichi-content ichi-content-back">
-                        <div class="row">
+                                <!-- CONTENT: LEFT LEFT SECTION -->
+                                <div class="col-sm-6">
+                                    <div class="ichi-content-left">
 
-                            <!-- CONTENT: LEFT LEFT SECTION -->
-                            <div class="col-sm-6">
-                                <div class="ichi-content-left">
-
-                                    <h1 class="ichi-title">Jia Sheng Chong</h1>
-                                    <hr class="ichi-hr" align="left">
-                                    <h4>Full Stack Web Developer | Visual Novel Developer</h4>
-
-                                    <!-- <div class="ichi-footer">jiashengc@outlook.com</div> -->
-                                </div>
-                            </div>
-
-                            <!-- CONTENT: LEFT RIGHT SECTION -->
-                            <div class="col-sm-6">
-                                <div class="ichi-content-right">
-                                    <div class="ichi-content-bottom">
-                                        <h2>
-                                            <span>What I've done, and </span><br>
-                                            <span class="ichi-prime">What I can do</span>
-                                        </h2>
-
+                                        <h1 class="ichi-title">Jia Sheng Chong</h1>
                                         <hr class="ichi-hr" align="left">
+                                        <h4>Full Stack Web Developer | Visual Novel Developer</h4>
 
-                                        <h3>Projects:</h3>
-                                        <ul>
-                                            <li>Noshable</li>
-                                            <li>Dating Languages</li>
-                                            <li>Spheradical</li>
-                                        </ul>
-
-                                        <h3>Development:</h3>
-                                        <ul>
-                                            <li>Symfony, Doctrine, Twig</li>
-                                            <li>Linux, Apache, MySQL, PHP (LAMP)</li>
-                                            <li>Node.js, Vue.js, jQuery</li>
-                                            <li>Bootstrap</li>
-                                            <li>Ren'Py</li>
-                                        </ul>
+                                        <!-- <div class="ichi-footer">jiashengc@outlook.com</div> -->
                                     </div>
                                 </div>
-                            </div>
 
+                                <!-- CONTENT: LEFT RIGHT SECTION -->
+                                <div class="col-sm-6">
+                                    <div class="ichi-content-right">
+                                        <div class="ichi-content-bottom">
+                                            <h2>
+                                                <span>What I've done, and </span><br>
+                                                <span class="ichi-prime">What I can do</span>
+                                            </h2>
+
+                                            <hr class="ichi-hr" align="left">
+
+                                            <h3>Projects:</h3>
+                                            <ul>
+                                                <li>Noshable</li>
+                                                <li>Dating Languages</li>
+                                                <li>Spheradical</li>
+                                            </ul>
+
+                                            <h3>Development:</h3>
+                                            <ul>
+                                                <li>Symfony, Doctrine, Twig</li>
+                                                <li>Linux, Apache, MySQL, PHP (LAMP)</li>
+                                                <li>Node.js, Vue.js, jQuery</li>
+                                                <li>Bootstrap</li>
+                                                <li>Ren'Py</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <!-- CONTENT: RIGHT SECTION -->
-                <div class="col-sm-4 col-md-6">
+                    <!-- CONTENT: RIGHT SECTION -->
+                    <div class="col-sm-4 col-md-6">
 
+                    </div>
+                    
                 </div>
-                
             </div>
         </div>
     </div>
 
-    <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script>
-        let open = false;
-        
-        function openNav() {
-            document.getElementsByClassName("ichi-side-bar")[0].style.width = "100vw";
-        }
-
-        function closeNav() {
-            document.getElementsByClassName("ichi-side-bar")[0].style.width = "0";
-        }
-
-        $(document).ready(function() {
-            var movementStrength = 25;
-            var height = movementStrength / $(window).height();
-            var width = movementStrength / $(window).width();
-            $(".ichi-body").mousemove(function(e){
-                    var pageX = e.pageX - ($(window).width() / 2);
-                    var pageY = e.pageY - ($(window).height() / 2);
-                    var newvalueX = width * pageX * -1 - 25;
-                    var newvalueY = height * pageY * -1 - 50;
-                    $('.ichi-body').css("background-position", newvalueX+"px     "+newvalueY+"px");
-            });
-
-            $('.ichi-circle').click(function(){
-                $('#nav-icon1').toggleClass('open');
-                if (open) {
-                    closeNav();
-                    open = false;
-                } else {
-                    openNav();
-                    open = true;
-                }
-
-            });
-        });
-        
-    </script>
+    <script src="node_modules/barba.js/dist/barba.min.js"></script>
+    <script src="js/transition.js"></script>
 
 </body>
 
