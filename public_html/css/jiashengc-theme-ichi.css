@@ -51,6 +51,8 @@ h1 {
 }
 
 .ichi-content-left {
+    position: relative;
+    height: 90vh;
     margin: 20px;
 }
 
@@ -78,6 +80,16 @@ h1 {
 
 .ichi-title {
     margin-top: 100px;
+}
+
+.ichi-hr {
+    width: 75%;
+}
+
+.ichi-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
 
 /*
