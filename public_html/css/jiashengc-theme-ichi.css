@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand');
-@import url('https://fonts.googleapis.com/css?family=Average');
+@import url('https://fonts.googleapis.com/css?family=Lora:700');
+@import url('https://fonts.googleapis.com/css?family=Faustina');
 
 html {
     height: 100%;
@@ -23,12 +24,16 @@ a:hover {
     color: white;
 }
 
+ul {
+    list-style-type: none;
+}
+
 h1,
 h2,
 h3,
 h4,
 h5 {
-    font-family: 'Average', serif;
+    font-family: 'Faustina', serif;
 }
 
 h1 {
@@ -43,6 +48,7 @@ h1 {
     background-position: center center;
     background-size: calc(400% + 50px);
     background-repeat: no-repeat;
+    transition: all .2s ease-out;
 }
 
 .ichi-side-bar {
@@ -122,6 +128,20 @@ h1 {
     height: 90vh;
 }
 
+.ichi-content-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.ichi-content-bottom h1,
+.ichi-content-bottom h2,
+.ichi-content-bottom h3,
+.ichi-content-bottom h4,
+.ichi-content-bottom h5 {
+    font-family: 'Lora', serif;
+}
+
 .ichi-circle {
     position: fixed;
     top: 0;
@@ -158,6 +178,10 @@ h1 {
     margin-top: 40px;
 }
 
+.ichi-prime {
+    color: #5DA9E9;
+}
+
 .ichi-hr {
     width: 75%;
 }
@@ -167,9 +191,8 @@ h1 {
 }
 
 .ichi-footer {
-    position: absolute;
-    bottom: 0;
-    left: 0;
+    display: table-cell;
+    vertical-align: bottom;
 }
 
 /*
