@@ -18,76 +18,14 @@
             </div>
         </div>
 
-        <!-- SIDE BAR -->
-        <div class="row ichi-side-bar">
-
-            <!-- SIDE BAR: LEFT SECTION -->
-            <div class="col-sm-6">
-                <div class="ichi-content">
-                    <div class="row">
-
-                        <!-- SIDE BAR: LEFT LEFT SECTION -->
-                        <div class="col-sm-6">
-                            <div class="ichi-content-left">
-
-                                <h1 class="ichi-title">Menu</h1>
-                                <hr class="ichi-hr" align="left">
-                                <h4 class="faustina">
-                                    <span>Let's starting facing towards tomorrow again, </span><br>
-                                    <span>
-                                        <a href="https://www.youtube.com/watch?v=fIMUKz-5uNs" class="ichi-prime">Both You and I.</a>
-                                    </span>
-                                    <br><br>
-                                    <span><i>- Night Sky Patrol of Tomorrow</i></span>
-                                </h4>
-                                <hr class="ichi-hr" align="left">
-
-                                <p class="ichi-social">
-                                    <a href="https://github.com/jiashengc">
-                                        <i class="fa fa-github" aria-hidden="true"></i>  
-                                    </a>       
-                                    <a href="https://linkedin.com/in/jiashengc">
-                                        <i class="fa fa-linkedin" aria-hidden="true"></i>
-                                    </a>                     
-                                </p>
-
-                            </div>
-                        </div>
-
-                        <!-- SIDE BAR: LEFT RIGHT SECTION -->
-                        <div class="col-sm-6">
-                            <div class="ichi-content-right">
-                                <h5 class="ichi-title-sm">Navigation ~</h5>
-                                <nav class="ichi-nav">
-                                    <a href=""><h2>Home</h2></a>
-                                    <a href=""><h2>About</h2></a>
-                                    <a href=""><h2>Projects</h2></a>
-                                    <a href=""><h2>Resume</h2></a>
-
-                                    <br>
-                                    <a href=""><h2>Blog</h2></a>
-                                    <a href=""><h2>Contact</h2></a>                                    
-                                </nav>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-            <!-- SIDE BAR: RIGHT SECTION -->
-            <div class="col-sm-6">
-
-            </div>
-
-        </div>
+        <?php include ('../includes/sidebar.php'); ?>
 
         <!-- CONTENT -->
         <div class="row ichi-body">
             <div class="ichi-body-colour">
 
                 <!-- CONTENT: LEFT SECTION -->
-                <div class="col-sm-6">
+                <div class="col-sm-8 col-md-6">
                     <div class="ichi-content ichi-content-back">
                         <div class="row">
 
@@ -112,7 +50,7 @@
                                             <span class="ichi-prime">What I can do</span>
                                         </h2>
 
-                                        <hr>
+                                        <hr class="ichi-hr" align="left">
 
                                         <h3>Projects:</h3>
                                         <ul>
@@ -138,7 +76,7 @@
                 </div>
 
                 <!-- CONTENT: RIGHT SECTION -->
-                <div class="col-sm-6">
+                <div class="col-sm-4 col-md-6">
 
                 </div>
                 
