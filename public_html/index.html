@@ -9,18 +9,41 @@
 <body>
 
     <div class="container-fluid">
+        <div class="row ichi-side-bar">
+            <!-- LEFT SECTION -->
+            <div class="col-sm-6">
+                <div class="ichi-content">
+                    <div class="row">
+
+                        <div class="col-sm-6">
+                            <div class="ichi-content-left">
+                                <div class="ichi-circle" onclick="closeNav();">
+                                    <i class="fa fa-times ichi-bars" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6">
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="row ichi-body">
             <div class="ichi-body-colour">
 
                 <!-- LEFT SECTION -->
                 <div class="col-sm-6">
-                    <div class="ichi-content">
+                    <div class="ichi-content ichi-content-back">
 
                         <div class="row">
 
                             <div class="col-sm-6">
                                 <div class="ichi-content-left">
-                                    <div class="ichi-circle">
+                                    <div class="ichi-circle" onclick="openNav();">
                                         <i class="fa fa-bars ichi-bars" aria-hidden="true"></i>
                                     </div>
 
@@ -28,9 +51,7 @@
                                     <hr class="ichi-hr" align="left">
                                     <p>Full Stack Web Developer | Visual Novel Developer</p>
 
-                                    <div class="ichi-footer">
-                                        <p>jiashengc@outlook.com</p>
-                                    </div>
+                                    <div class="ichi-footer">jiashengc@outlook.com</div>
                                 </div>
                             </div>
 
@@ -54,6 +75,14 @@
 
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script>
+        function openNav() {
+            document.getElementsByClassName("ichi-side-bar")[0].style.width = "100vw";
+        }
+
+        function closeNav() {
+            document.getElementsByClassName("ichi-side-bar")[0].style.width = "0";
+        }
+
         $(document).ready(function() {
             var movementStrength = 25;
             var height = movementStrength / $(window).height();
