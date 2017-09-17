@@ -32,9 +32,6 @@
                             <br><br>
                             <span><i>- Night Sky Patrol of Tomorrow</i></span>
                         </h4>
-                        <hr class="ichi-hr" align="left">
-
-                        <h4>Social Links</h4>
                         <p class="ichi-social">
                             <a href="https://github.com/jiashengc">
                                 <i class="fa fa-github" aria-hidden="true"></i>  
@@ -69,7 +66,7 @@
 
     <!-- SIDE BAR: RIGHT SECTION -->
     <div class="col-sm-6">
-
+        
     </div>
 
 </div>
