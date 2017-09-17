@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+@import url('https://fonts.googleapis.com/css?family=Average');
+
+html {
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Average', serif;
+}
+
+.ichi-body { 
+    height: 100vh;
+    position: relative;
+    background-image: url("../images/kl.jpg");
+    background-position: center center;
+    background-size: cover;
+}
+
+.ichi-body-colour {
+    background-color: rgba(24,43,58, 0.1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.ichi-content {
+    color: white;
+    margin-top: 2vh;
+    height: 96vh;
+    background-color: rgba(16,28,37,0.8);
+}
+
+.ichi-content-left {
+    margin: 10px;
+}
