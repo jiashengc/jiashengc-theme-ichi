@@ -125,20 +125,33 @@ h1 {
 
 .ichi-content-left {
     position: relative;
-    height: 90vh;
+    height: 25vh;
     margin: 20px;
 }
 
 .ichi-content-right {
     position: relative;
-    height: 90vh;
+    height: 25vh;
+    margin-left: 20px;
 }
 
-.ichi-content-bottom {
+@media (min-width: 767px) {
+    .ichi-content-left {
+        height: 90vh;
+        margin: 20px;
+    }
+
+    .ichi-content-right {
+        height: 90vh;
+        margin: 0;
+    }
+}
+
+/* .ichi-content-bottom {
     position: absolute;
     bottom: 0;
     left: 0;
-}
+} */
 
 .ichi-content-bottom h1,
 .ichi-content-bottom h2,

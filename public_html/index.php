@@ -25,7 +25,7 @@
                             <div class="row">
 
                                 <!-- CONTENT: LEFT LEFT SECTION -->
-                                <div class="col-sm-6">
+                                <div class="col-xs-12 col-sm-6">
                                     <div class="ichi-content-left">
 
                                         <h1 class="ichi-title">Jia Sheng Chong</h1>
@@ -37,7 +37,7 @@
                                 </div>
 
                                 <!-- CONTENT: LEFT RIGHT SECTION -->
-                                <div class="col-sm-6">
+                                <div class="col-xs-12 col-sm-6">
                                     <div class="ichi-content-right">
                                         <div class="ichi-content-bottom">
                                             <h2>
