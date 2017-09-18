@@ -25,7 +25,7 @@
                             <div class="row">
 
                                 <!-- CONTENT: LEFT LEFT SECTION -->
-                                <div class="col-sm-6">
+                                <div class="col-xs-12 col-sm-6">
                                     <div class="ichi-content-left">
 
                                         <h1 class="ichi-title">Projects</h1>
@@ -38,12 +38,10 @@
                                 </div>
 
                                 <!-- CONTENT: LEFT RIGHT SECTION -->
-                                <div class="col-sm-6">
+                                <div class="col-xs-12 col-sm-6">
                                     <div class="ichi-content-right">
                                         <div class="ichi-content-bottom">
                                             <h2 class="ichi-motto">
-                                                <span>What I've done, and </span><br>
-                                                <span class="ichi-prime">What I can do</span>
                                             </h2>
 
                                             <hr class="ichi-hr" align="left">
