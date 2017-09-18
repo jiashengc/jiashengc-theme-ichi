@@ -48,8 +48,8 @@
 
                                         <p>
                                             During my time in Brisbane, I've finally won my first hackathon and gotten my first internship! Woohoo!<br>
-                                            So I won the "Sphero" and "Tech" challenge for Angel Hack Brisbane '17 and was the winner of DisruptingEd Hackathon, and
-                                            I also interned at RedEye Apps during the winter break and I'm currently building the MVP for a startup called Noshable at the University of Queensland.
+                                            So I won the "Sphero" and "Tech" challenge for Angel Hack Brisbane '17 and was the winner of DisruptingEd Hackathon.
+                                            I also interned at RedEye Apps during the winter break and currently, I'm building the MVP for a startup called Noshable at the University of Queensland.
                                         </p>
 
                                         <p>
