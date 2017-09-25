@@ -88,7 +88,7 @@
                 ],
                 "motto": "Safer Food, For the Safer Future",
                 "image": "noshable.png",
-                "link": "http://13.55.114.96/"
+                "link": "https://app.noshable.org"
             },
             {
                 "name": "Dating Languages Visual Novel",
