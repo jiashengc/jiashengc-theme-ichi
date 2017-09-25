@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <?php
 
     function importCSS()
@@ -9,7 +8,6 @@
     }
 
 ?>
-=======
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -53,4 +51,3 @@
     }
 ?>
     
->>>>>>> 9ab75966525483bb244da09c8cd26b166cf2af42
